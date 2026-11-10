@@ -6,12 +6,12 @@
       <div class="announce">
         <div class="wrap announce-inner">
           <p><strong>Launching Nov 10, 2026</strong> <span class="announce-extra">· Get pricing & floor plans before public release</span></p>
-          <a class="btn btn-coral btn-sm" href="register.html">Book VIP Review →</a>
+          <a class="btn btn-coral btn-sm" href="register.html">Book a review</a>
         </div>
       </div>
       <div class="nav">
         <div class="wrap nav-inner">
-          <a class="logo" href="index.html" aria-label="Bridgelands — Home"><img src="images/logo-dark.svg" alt="Bridgelands"></a>
+          <a class="wordmark" href="index.html" aria-label="Bridgelands — Home">BRIDGE<span>LANDS</span></a>
           <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
           <nav class="nav-links" aria-label="Primary">
             <a href="index.html#features">Why Bridgelands</a>
@@ -31,7 +31,7 @@
       <div class="wrap">
         <div class="footer-grid">
           <div>
-            <img src="images/logo-light.svg" alt="Bridgelands" style="height:48px;margin-bottom:16px">
+            <p class="wordmark" style="color:white;margin-bottom:16px">BRIDGE<span>LANDS</span></p>
             <p>A future master-planned community at Weston Rd & Teston Rd, within North Vaughan's Block 41 planning area bounded by Kirby Rd, Weston Rd, Teston Rd & Pine Valley Dr. Townhomes and detached homes, pricing on request. Launching November 10, 2026.</p>
             <p><strong>Contact</strong><br><a href="${S.phoneHref}">${S.phone}</a><br><a href="mailto:${S.email}">${S.email}</a><br>Weston Rd & Teston Rd<br>North Vaughan, Ontario</p>
           </div>
