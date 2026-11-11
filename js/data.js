@@ -5,39 +5,39 @@ window.SITE = {
   whatsapp: "https://wa.me/12894000110?text=Hi%2C%20I%27d%20like%20early%20access%20details%20for%20Bridgelands.",
   collections: {
     opus: [
-      { title: "Laneway Towns", kind: "Townhomes", size: "1,541 – 2,328 sq.ft.", meta: "5 models", img: "images/opus-lane.webp", models: [["RL-01", "1,541 – 1,566 sq.ft.", "3–4 beds"], ["RL-02", "1,695 – 1,719 sq.ft.", "3–4 beds"], ["RL-03", "1,841 – 1,866 sq.ft.", "3–5 beds"], ["RL-04", "2,134 sq.ft.", "4–5 beds"], ["RL-05", "2,322 – 2,328 sq.ft.", "4–5 beds"]] },
-      { title: "Back-to-Back Towns", kind: "Townhomes", size: "1,644 – 1,955 sq.ft.", meta: "3 models", img: "images/opus-b2b.webp", models: [["B2B-01", "1,644 – 1,680 sq.ft.", "2 full baths"], ["B2B-02 End", "1,751 sq.ft.", "3 beds"], ["B2B-03 Corner", "1,955 sq.ft.", "3 beds"]] },
-      { title: "26' Rear Lane Detached", kind: "Detached", size: "1,952 – 2,286 sq.ft.", meta: "3 models · 26' lots", img: "images/opus-26.webp", models: [["26-01", "1,952 – 1,974 sq.ft.", "4 beds"], ["26-02", "2,121 – 2,123 sq.ft.", "4 beds"], ["26-03", "2,286 sq.ft.", "4 beds"]] },
-      { title: "32' Rear Lane Detached", kind: "Detached", size: "2,404 – 3,022 sq.ft.", meta: "4 models · 32' lots", img: "images/opus-32.webp", models: [["32-01", "2,404 – 2,421 sq.ft.", "4 beds"], ["32-02", "2,569 – 2,575 sq.ft.", "4 beds"], ["32-03", "2,716 – 2,717 sq.ft.", "4 beds"], ["32-04", "3,020 – 3,022 sq.ft.", "4 beds"]] },
-      { title: "38' Detached", kind: "Detached", size: "2,496 – 3,233 sq.ft.", meta: "5 models · 38' lots", img: "images/opus-38.webp", models: [["38-01", "2,496 – 2,519 sq.ft.", "4 beds"], ["38-02", "2,662 – 2,667 sq.ft.", "4–5 beds"], ["38-03", "2,807 – 2,812 sq.ft.", "4–6 beds"]] },
-      { title: "42' Detached", kind: "Detached", size: "2,954 – 3,276 sq.ft.", meta: "3 models · 42' lots", img: "images/opus-42.webp" }
+      { title: "Laneway Towns", kind: "Townhomes", size: "1,541 – 2,328 sq.ft.", meta: "5 models", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-Laneway-Freehold-Townhomes-Elevation-B.webp", models: [["RL-01", "1,541 – 1,566 sq.ft.", "3–4 beds"], ["RL-02", "1,695 – 1,719 sq.ft.", "3–4 beds"], ["RL-03", "1,841 – 1,866 sq.ft.", "3–5 beds"], ["RL-04", "2,134 sq.ft.", "4–5 beds"], ["RL-05", "2,322 – 2,328 sq.ft.", "4–5 beds"]] },
+      { title: "Back-to-Back Towns", kind: "Townhomes", size: "1,644 – 1,955 sq.ft.", meta: "3 models", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-Back-to-Back-Freehold-Townhomes.webp", models: [["B2B-01", "1,644 – 1,680 sq.ft.", "2 full baths"], ["B2B-02 End", "1,751 sq.ft.", "3 beds"], ["B2B-03 Corner", "1,955 sq.ft.", "3 beds"]] },
+      { title: "26' Rear Lane Detached", kind: "Detached", size: "1,952 – 2,286 sq.ft.", meta: "3 models · 26' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-26-Feet-Rear-Lane-Detached-Home-Model-26-01-Elevation-A.webp", models: [["26-01", "1,952 – 1,974 sq.ft.", "4 beds"], ["26-02", "2,121 – 2,123 sq.ft.", "4 beds"], ["26-03", "2,286 sq.ft.", "4 beds"]] },
+      { title: "32' Rear Lane Detached", kind: "Detached", size: "2,404 – 3,022 sq.ft.", meta: "4 models · 32' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-32-Feet-Rear-Lane-Detached-Home-Model-32-01-Elevation-A.webp", models: [["32-01", "2,404 – 2,421 sq.ft.", "4 beds"], ["32-02", "2,569 – 2,575 sq.ft.", "4 beds"], ["32-03", "2,716 – 2,717 sq.ft.", "4 beds"], ["32-04", "3,020 – 3,022 sq.ft.", "4 beds"]] },
+      { title: "38' Detached", kind: "Detached", size: "2,496 – 3,233 sq.ft.", meta: "5 models · 38' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-38-Feet-Detached-Home-Model-38-01-Elevation-A.webp", models: [["38-01", "2,496 – 2,519 sq.ft.", "4 beds"], ["38-02", "2,662 – 2,667 sq.ft.", "4–5 beds"], ["38-03", "2,807 – 2,812 sq.ft.", "4–6 beds"]] },
+      { title: "42' Detached", kind: "Detached", size: "2,954 – 3,276 sq.ft.", meta: "3 models · 42' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-42-Feet-Detached-Home-Model-42-01-Elevation-A.webp" }
     ],
     arista: [
-      { title: "Freehold Townhomes", kind: "Townhomes", size: "1,495 – 2,355 sq.ft.", meta: "13 models", img: "images/arista-court.webp" },
-      { title: "26' Collection", kind: "Detached", size: "2,205 – 2,215 sq.ft.", meta: "1 model · 26' lots", img: "images/arista-avignon.webp" },
-      { title: "32' Collection", kind: "Detached", size: "2,460 – 2,760 sq.ft.", meta: "2 models · 32' lots", img: "images/arista-windsor.webp" },
-      { title: "38' Collection", kind: "Detached", size: "2,400 – 3,015 sq.ft.", meta: "5 models · 38' lots", img: "images/arista-marina.webp" },
-      { title: "42' Collection", kind: "Detached", size: "2,800 – 3,285 sq.ft.", meta: "4 models · 42' lots", img: "images/arista-marina.webp" }
+      { title: "Freehold Townhomes", kind: "Townhomes", size: "1,495 – 2,355 sq.ft.", meta: "13 models", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-Courtyard-Lane-Townhomes.webp" },
+      { title: "26' Collection", kind: "Detached", size: "2,205 – 2,215 sq.ft.", meta: "1 model · 26' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-26-Feet-Detached-Home-The-Avignon-Elevation-B.webp" },
+      { title: "32' Collection", kind: "Detached", size: "2,460 – 2,760 sq.ft.", meta: "2 models · 32' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-32-Feet-Detached-Home-The-Windsor-Elevation-B.webp" },
+      { title: "38' Collection", kind: "Detached", size: "2,400 – 3,015 sq.ft.", meta: "5 models · 38' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-42-Feet-Detached-Home-The-Marina-Elevation-B.webp" },
+      { title: "42' Collection", kind: "Detached", size: "2,800 – 3,285 sq.ft.", meta: "4 models · 42' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-42-Feet-Detached-Home-The-Marina-Elevation-B.webp" }
     ],
     deco: [
-      { title: "Townhomes", kind: "Townhomes", size: "1,468 – 2,584 sq.ft.", meta: "8 models", img: "images/deco-street.webp" },
-      { title: "Detached Laneway", kind: "Detached", size: "2,192 – 2,950 sq.ft.", meta: "5 models · 26' & 32' lots", img: "images/deco-lane.webp" },
-      { title: "Detached Homes", kind: "Detached", size: "1,649 – 3,623 sq.ft.", meta: "9 models · 38' & 42' lots", img: "images/deco-street.webp" }
+      { title: "Townhomes", kind: "Townhomes", size: "1,468 – 2,584 sq.ft.", meta: "8 models", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/DECO-Detached-Homes-Streetscape.webp" },
+      { title: "Detached Laneway", kind: "Detached", size: "2,192 – 2,950 sq.ft.", meta: "5 models · 26' & 32' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/DECO-Laneway-Detached-Homes-Streetscape.webp" },
+      { title: "Detached Homes", kind: "Detached", size: "1,649 – 3,623 sq.ft.", meta: "9 models · 38' & 42' lots", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/DECO-Detached-Homes-Streetscape.webp" }
     ]
   },
   gallery: [
-    { builder: "opus", src: "images/street.webp", cap: "Opus Homes streetscape" },
-    { builder: "opus", src: "images/opus-38.webp", cap: "Opus 38' detached, elevation A" },
-    { builder: "arista", src: "images/arista-court.webp", cap: "Arista courtyard lane townhomes" },
-    { builder: "deco", src: "images/deco-street.webp", cap: "DECO detached streetscape" },
-    { builder: "opus", src: "images/opus-lane.webp", cap: "Opus laneway townhomes" },
-    { builder: "arista", src: "images/arista-marina.webp", cap: "Arista The Marina, 42'" },
-    { builder: "deco", src: "images/park.webp", cap: "Planned community park" },
-    { builder: "opus", src: "images/opus-42.webp", cap: "Opus 42' detached" },
-    { builder: "arista", src: "images/arista-avignon.webp", cap: "Arista The Avignon, 26'" },
-    { builder: "deco", src: "images/deco-lane.webp", cap: "DECO laneway detached streetscape" },
-    { builder: "opus", src: "images/opus-b2b.webp", cap: "Opus back-to-back townhomes" },
-    { builder: "arista", src: "images/arista-windsor.webp", cap: "Arista The Windsor, 32'" }
+    { builder: "opus", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-Bridgelands-Streetscape.webp", cap: "Opus Homes streetscape" },
+    { builder: "opus", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-38-Feet-Detached-Home-Model-38-01-Elevation-A.webp", cap: "Opus 38' detached, elevation A" },
+    { builder: "arista", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-Courtyard-Lane-Townhomes.webp", cap: "Arista courtyard lane townhomes" },
+    { builder: "deco", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/DECO-Detached-Homes-Streetscape.webp", cap: "DECO detached streetscape" },
+    { builder: "opus", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-Laneway-Freehold-Townhomes-Elevation-B.webp", cap: "Opus laneway townhomes" },
+    { builder: "arista", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-42-Feet-Detached-Home-The-Marina-Elevation-B.webp", cap: "Arista The Marina, 42'" },
+    { builder: "deco", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Community-and-Lifestyle/Deco-Bridgelands-Community-Park.webp", cap: "Planned community park" },
+    { builder: "opus", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-42-Feet-Detached-Home-Model-42-01-Elevation-A.webp", cap: "Opus 42' detached" },
+    { builder: "arista", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-26-Feet-Detached-Home-The-Avignon-Elevation-B.webp", cap: "Arista The Avignon, 26'" },
+    { builder: "deco", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/DECO-Laneway-Detached-Homes-Streetscape.webp", cap: "DECO laneway detached streetscape" },
+    { builder: "opus", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-Back-to-Back-Freehold-Townhomes.webp", cap: "Opus back-to-back townhomes" },
+    { builder: "arista", src: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Arista-32-Feet-Detached-Home-The-Windsor-Elevation-B.webp", cap: "Arista The Windsor, 32'" }
   ],
   brochures: [
     ["Opus · Laneway Towns", "5 models"],

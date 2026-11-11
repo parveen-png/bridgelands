@@ -5,41 +5,64 @@
     return `
       <div class="nav">
         <div class="wrap nav-inner">
-          <a class="wordmark" href="index.html">Bridgelands</a>
+          <a class="logo" href="index.html" aria-label="Bridgelands — Home"><img src="images/logo-dark.svg" alt="Bridgelands"></a>
           <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
           <nav class="nav-links" aria-label="Primary">
-            <a href="index.html#homes">Homes</a>
+            <a href="index.html#features">Why Bridgelands</a>
+            <a href="index.html#builder">Community</a>
             <a href="index.html#location">Location</a>
-            <a href="blog.html">Guides</a>
-            <a href="${S.phoneHref}">${S.phone}</a>
+            <a href="blog.html">Blog</a>
+            <a class="btn btn-outline btn-sm" href="index.html#downloads">Get Pricing & Floor Plans</a>
+            <a class="btn btn-coral btn-sm" href="register.html">Register</a>
           </nav>
         </div>
       </div>`;
   }
 
   function footer() {
+    const sisters = S.sisters.map(([name, href]) => `<a href="${href}" target="_blank" rel="noreferrer">${name}</a>`).join("");
     return `
       <div class="wrap">
         <div class="footer-grid">
           <div>
-            <p class="wordmark" style="margin-bottom:16px">Bridgelands</p>
-            <p>Towns and detached homes at Weston Rd &amp; Teston Rd, North Vaughan. Pricing on request. Launching November 10, 2026.</p>
-            <p><a href="${S.phoneHref}">${S.phone}</a><br><a href="mailto:${S.email}">${S.email}</a></p>
+            <img src="images/logo-light.svg" alt="Bridgelands" style="height:48px;margin-bottom:16px">
+            <p>A future master-planned community at Weston Rd & Teston Rd, within North Vaughan's Block 41 planning area bounded by Kirby Rd, Weston Rd, Teston Rd & Pine Valley Dr. Townhomes and detached homes, pricing on request. Launching November 10, 2026.</p>
+            <p><strong>Contact</strong><br><a href="${S.phoneHref}">${S.phone}</a><br><a href="mailto:${S.email}">${S.email}</a><br>Weston Rd & Teston Rd<br>North Vaughan, Ontario</p>
           </div>
           <div>
-            <h4>Links</h4>
+            <h4>Quick links</h4>
             <ul>
-              <li><a href="index.html#homes">Homes</a></li>
+              <li><a href="index.html#features">Why Bridgelands</a></li>
+              <li><a href="index.html#builder">Community</a></li>
               <li><a href="index.html#location">Location</a></li>
-              <li><a href="blog.html">Guides</a></li>
-              <li><a href="register.html">Register</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="terms.html">Terms</a></li>
+              <li><a href="index.html#downloads">Get Pricing & Floor Plans</a></li>
+              <li><a href="register.html">Book VIP Review</a></li>
+              <li><a href="blog.html">Guides & Comparisons</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Guides</h4>
+            <ul>
+              <li><a href="article.html?slug=bridgelands-is-block-41">Block 41 Vaughan</a></li>
+              <li><a href="article.html?slug=opa-50-timeline">Block 41 Secondary Plan</a></li>
+              <li><a href="article.html?slug=buying-preconstruction">Bridgelands Price List</a></li>
+              <li><a href="article.html?slug=opus-townhomes">Bridgelands Floor Plans</a></li>
+              <li><a href="article.html?slug=towns-vs-detached">Bridgelands Townhomes</a></li>
+              <li><a href="article.html?slug=opus-detached">Bridgelands Detached Homes</a></li>
+              <li><a href="article.html?slug=getting-around">Weston Rd & Teston Rd Location</a></li>
+              <li><a href="article.html?slug=november-10-launch">November 10 Launch Guide</a></li>
             </ul>
           </div>
         </div>
+        <div class="sisters">
+          <h4>Related communities</h4>
+          <div class="sister-grid">${sisters}</div>
+        </div>
         <div class="fine">
-          <p>© 2026 Bridgelands Early Access — Marketing by Condo Circle. This independent recreation is not an official builder website and does not represent Arista Homes, DECO Homes or Opus Homes. Renderings are artist's concepts. Information is subject to change.</p>
+          <p>© 2026 Bridgelands Early Access — Marketing by Condo Circle. This independent recreation is not an official builder website and does not represent Arista Homes, DECO Homes or Opus Homes.</p>
+          <p>Renderings are artist's concepts. Pricing, product types, incentives and release dates are confirmed by each builder. Information is subject to change. E. & O.E.</p>
         </div>
       </div>
       <div class="floaters">
