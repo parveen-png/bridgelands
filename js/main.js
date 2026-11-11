@@ -27,7 +27,7 @@
           <div>
             <img src="images/logo-light.svg" alt="Bridgelands" style="height:48px;margin-bottom:16px">
             <p>A future master-planned community at Weston Rd & Teston Rd, within North Vaughan's Block 41 planning area bounded by Kirby Rd, Weston Rd, Teston Rd & Pine Valley Dr. Townhomes and detached homes, pricing on request. Launching November 10, 2026.</p>
-            <p><strong>Contact</strong><br><a href="${S.phoneHref}">${S.phone}</a><br><a href="mailto:${S.email}">${S.email}</a><br>Weston Rd & Teston Rd<br>North Vaughan, Ontario</p>
+            <p>Weston Rd &amp; Teston Rd<br>North Vaughan, Ontario</p>
           </div>
           <div>
             <h4>Quick links</h4>
@@ -61,17 +61,11 @@
           <div class="sister-grid">${sisters}</div>
         </div>
         <div class="fine">
-          <p>© 2026 Bridgelands Early Access — Marketing by Condo Circle. This independent recreation is not an official builder website and does not represent Arista Homes, DECO Homes or Opus Homes.</p>
+          <p>© 2026 Bridgelands Early Access. This independent recreation is not an official builder website and does not represent Arista Homes, DECO Homes or Opus Homes.</p>
           <p>Renderings are artist's concepts. Pricing, product types, incentives and release dates are confirmed by each builder. Information is subject to change. E. & O.E.</p>
         </div>
       </div>
-      <div class="floaters">
-        <a class="floater" href="${S.whatsapp}" target="_blank" rel="noreferrer" aria-label="Open WhatsApp chat">${waIcon()}</a>
-      </div>`;
-  }
-
-  function waIcon() {
-    return `<svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l6-1.6A11 11 0 0 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.5.9.9-3.4-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.3a.5.5 0 0 0 0-.5c0-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 4 14 14 0 0 0 1.5.5 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.1-.4-.2z"/></svg>`;
+`;
   }
 
   function mountChrome() {

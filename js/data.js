@@ -1,8 +1,4 @@
 window.SITE = {
-  phone: "289-400-0110",
-  phoneHref: "tel:+12894000110",
-  email: "Info@condocircle.ca",
-  whatsapp: "https://wa.me/12894000110?text=Hi%2C%20I%27d%20like%20early%20access%20details%20for%20Bridgelands.",
   collections: {
     opus: [
       { title: "Laneway Towns", kind: "Townhomes", size: "1,541 – 2,328 sq.ft.", meta: "5 models", img: "https://ewzutahmskuhbsalpygn.supabase.co/storage/v1/object/public/nomi-towns/bridgelands/Home-Renderings/Opus-Laneway-Freehold-Townhomes-Elevation-B.webp", models: [["RL-01", "1,541 – 1,566 sq.ft.", "3–4 beds"], ["RL-02", "1,695 – 1,719 sq.ft.", "3–4 beds"], ["RL-03", "1,841 – 1,866 sq.ft.", "3–5 beds"], ["RL-04", "2,134 sq.ft.", "4–5 beds"], ["RL-05", "2,322 – 2,328 sq.ft.", "4–5 beds"]] },
@@ -65,7 +61,7 @@ window.SITE = {
     ["How is Bridgelands connected to highways and transit?", "Teston Road provides direct access to Highway 400 and was widened to four lanes with sidewalks, cycling paths and a trail connection. Vaughan Metropolitan Centre on TTC Line 1 is roughly 12 minutes south. Rutherford GO on the Barrie Line is about 10 minutes away."],
     ["What amenities are planned inside the community?", "The plan includes schools, parks, trails, a community centre, a library, and retail in a mid-rise mixed-use community core, with sidewalks and cycling facilities tied into adjacent Greenbelt lands."],
     ["Is this an official builder website?", "No. It is an independent early-access presentation. Information is based on public planning documents and builder brochure ranges, and it is subject to change. Renderings are artist's concepts."],
-    ["How can I contact someone about Bridgelands?", "The sales contact published for this registration offer is Condo Circle at 289-400-0110 or Info@condocircle.ca."]
+    ["How can I contact someone about Bridgelands?", "Use the registration form on this page. This preview keeps what you enter in this browser only."]
   ],
   articles: [
     { slug: "bridgelands-explained", cat: "Community Guide", title: "Bridgelands Explained: One of the City's Last Greenfield Communities", date: "Jun 30, 2026", read: "6 min read", excerpt: "A 428-hectare New Community Area bounded by Kirby, Weston, Teston and Pine Valley — here's what the approved Secondary Plan (OPA 50) actually permits and why it matters for buyers.", body: ["Bridgelands sits inside Block 41, a New Community Area of about 428 hectares in North Vaughan. The planning area is framed by Kirby Road, Weston Road, Teston Road and Pine Valley Drive, with roughly 178 hectares subject to Ontario Regulation 644/20.", "OPA 50, fully approved by the Ontario Land Tribunal on August 18, 2021, permits a mix of low-rise towns and detached homes, low-rise mixed-use, mid-rise residential, and a mid-rise mixed-use community core. Schools, parks, trails, a community centre and a library are part of the approved vision.", "For buyers, the approval status matters more than the rendering. Infrastructure on Teston Road is already in the ground, three builders have published model ranges, and the public release date being discussed is November 10, 2026. Pricing is still on request."] },
