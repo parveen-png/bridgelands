@@ -234,6 +234,36 @@
       <p><a href="blog.html">← All articles</a></p>`;
   }
 
+  function brokerField() {
+    return `
+      <fieldset class="full broker">
+        <legend>Are you a broker?</legend>
+        <label><input type="radio" name="broker" value="Yes" required> Yes</label>
+        <label><input type="radio" name="broker" value="No" required> No</label>
+        <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </fieldset>`;
+  }
+
+  function sendLead(data, source) {
+    return fetch("/api/leads", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        first: data.first,
+        last: data.last,
+        email: data.email,
+        phone: data.phone,
+        choice: data.choice,
+        broker: data.broker,
+        notes: data.notes || "",
+        company: data.company || "",
+        source
+      })
+    }).then((res) => {
+      if (!res.ok) throw new Error("save failed");
+    });
+  }
+
   function simpleForm(rootId) {
     const root = document.getElementById(rootId);
     if (!root) return;
@@ -253,21 +283,26 @@
             <option>Either</option>
           </select>
         </label>
+        ${brokerField()}
         <button class="btn btn-coral" type="submit">Register</button>
       </form>
-      <p class="note">Saved only in this browser. This preview does not send your details to a sales team.</p>`;
+      <p class="note">Your details are added to the registration list.</p>`;
     root.querySelector("form").addEventListener("submit", (e) => {
       e.preventDefault();
       const data = Object.fromEntries(new FormData(e.target).entries());
-      data.at = new Date().toISOString();
-      const all = JSON.parse(localStorage.getItem("bridgelands-vip") || "[]");
-      all.push(data);
-      localStorage.setItem("bridgelands-vip", JSON.stringify(all));
-      root.innerHTML = `
-        <div class="success">
-          <h3>You're on the list.</h3>
-          <p>We saved your ${String(data.choice).toLowerCase()} interest on this device. Nothing was sent to a sales team.</p>
-        </div>`;
+      const button = e.target.querySelector('[type="submit"]');
+      button.disabled = true;
+      sendLead(data, "hero").then(() => {
+        root.innerHTML = `
+          <div class="success">
+            <h3>You're on the list.</h3>
+            <p>We saved your ${String(data.choice).toLowerCase()} interest.</p>
+          </div>`;
+      }).catch(() => {
+        button.disabled = false;
+        let note = root.querySelector(".note");
+        note.textContent = "We couldn't save that. Please try again.";
+      });
     });
   }
 
@@ -300,30 +335,34 @@
             <label>Email<input name="email" type="email" required placeholder="Email"></label>
             <label>Phone<input name="phone" required placeholder="Phone number"></label>
             <label class="full">Notes<textarea name="notes" rows="3" placeholder="Lot size, beds, timeline"></textarea></label>
+            ${brokerField()}
             <div class="full" style="display:flex;gap:8px">
               <button type="button" class="btn btn-outline" id="back">Back</button>
               <button class="btn btn-coral" type="submit">Unlock floor plans</button>
             </div>
           </form>
-          <p class="note">Saved only in this browser. This preview does not send your details to a sales team.</p>`;
+          <p class="note">Your details are added to the registration list.</p>`;
         root.querySelector("#back").addEventListener("click", () => { step = 1; paint(); });
         root.querySelector("#vip-form").addEventListener("submit", (e) => {
           e.preventDefault();
           const data = Object.fromEntries(new FormData(e.target).entries());
           data.choice = choice;
-          data.at = new Date().toISOString();
-          const all = JSON.parse(localStorage.getItem("bridgelands-vip") || "[]");
-          all.push(data);
-          localStorage.setItem("bridgelands-vip", JSON.stringify(all));
-          step = 3;
-          paint();
+          const button = e.target.querySelector('[type="submit"]');
+          button.disabled = true;
+          sendLead(data, "register").then(() => {
+            step = 3;
+            paint();
+          }).catch(() => {
+            button.disabled = false;
+            root.querySelector(".note").textContent = "We couldn't save that. Please try again.";
+          });
         });
       } else {
         root.innerHTML = `
           <div class="success">
             <p class="eyebrow">You're on the list</p>
             <h3>Thanks — we saved your ${choice.toLowerCase()} interest.</h3>
-            <p>On the live registration site, this is where floor plans and pricing updates would be emailed. This preview keeps your entry on this device only.</p>
+            <p>Floor plans and pricing updates go out as each builder releases them.</p>
             <a class="btn btn-coral" href="blog.html">Read the buyer guides</a>
           </div>`;
       }
