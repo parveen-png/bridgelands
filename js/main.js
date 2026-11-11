@@ -3,26 +3,18 @@
 
   function header() {
     return `
-      <div class="announce">
-        <div class="wrap announce-inner">
-          <p><strong>Launching Nov 10, 2026</strong> <span class="announce-extra">· Get pricing & floor plans before public release</span></p>
-          <a class="btn btn-coral btn-sm" href="register.html">Book a review</a>
-        </div>
-      </div>
-      <div class="nav">
-        <div class="wrap nav-inner">
-          <a class="wordmark" href="index.html" aria-label="Bridgelands — Home">BRIDGE<span>LANDS</span></a>
-          <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-          <nav class="nav-links" aria-label="Primary">
-            <a href="index.html#features">Why Bridgelands</a>
-            <a href="index.html#builder">Community</a>
-            <a href="index.html#location">Location</a>
-            <a href="blog.html">Blog</a>
-            <a class="btn btn-outline btn-sm" href="index.html#downloads">Get Pricing & Floor Plans</a>
-            <a class="btn btn-coral btn-sm" href="register.html">Register</a>
-          </nav>
-        </div>
-      </div>`;
+      <aside class="rail">
+        <a class="mark" href="index.html" aria-label="Bridgelands — Home">BL<em>41</em></a>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+        <nav class="nav-links rail-links" aria-label="Primary">
+          <a href="index.html#features">Why</a>
+          <a href="index.html#home-types">Homes</a>
+          <a href="index.html#location">Map</a>
+          <a href="blog.html">Notes</a>
+          <a href="register.html">Register</a>
+        </nav>
+        <a class="rail-phone" href="${S.phoneHref}">Call</a>
+      </aside>`;
   }
 
   function footer() {
@@ -31,7 +23,7 @@
       <div class="wrap">
         <div class="footer-grid">
           <div>
-            <p class="wordmark" style="color:white;margin-bottom:16px">BRIDGE<span>LANDS</span></p>
+            <p class="mark" style="margin-bottom:16px">BL<em>41</em></p>
             <p>A future master-planned community at Weston Rd & Teston Rd, within North Vaughan's Block 41 planning area bounded by Kirby Rd, Weston Rd, Teston Rd & Pine Valley Dr. Townhomes and detached homes, pricing on request. Launching November 10, 2026.</p>
             <p><strong>Contact</strong><br><a href="${S.phoneHref}">${S.phone}</a><br><a href="mailto:${S.email}">${S.email}</a><br>Weston Rd & Teston Rd<br>North Vaughan, Ontario</p>
           </div>
@@ -83,6 +75,7 @@
   function mountChrome() {
     const h = document.getElementById("chrome-header");
     const f = document.getElementById("chrome-footer");
+    document.body.classList.add("dossier");
     if (h) {
       h.className = "site-header";
       h.innerHTML = header();
