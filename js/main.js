@@ -3,64 +3,43 @@
 
   function header() {
     return `
-      <aside class="rail">
-        <a class="mark" href="index.html" aria-label="Bridgelands — Home">BL<em>41</em></a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-        <nav class="nav-links rail-links" aria-label="Primary">
-          <a href="index.html#features">Why</a>
-          <a href="index.html#home-types">Homes</a>
-          <a href="index.html#location">Map</a>
-          <a href="blog.html">Notes</a>
-          <a href="register.html">Register</a>
-        </nav>
-        <a class="rail-phone" href="${S.phoneHref}">Call</a>
-      </aside>`;
+      <div class="nav">
+        <div class="wrap nav-inner">
+          <a class="wordmark" href="index.html">Bridgelands</a>
+          <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+          <nav class="nav-links" aria-label="Primary">
+            <a href="index.html#homes">Homes</a>
+            <a href="index.html#location">Location</a>
+            <a href="blog.html">Guides</a>
+            <a href="${S.phoneHref}">${S.phone}</a>
+          </nav>
+        </div>
+      </div>`;
   }
 
   function footer() {
-    const sisters = S.sisters.map(([name, href]) => `<a href="${href}" target="_blank" rel="noreferrer">${name}</a>`).join("");
     return `
       <div class="wrap">
         <div class="footer-grid">
           <div>
-            <p class="mark" style="margin-bottom:16px">BL<em>41</em></p>
-            <p>A future master-planned community at Weston Rd & Teston Rd, within North Vaughan's Block 41 planning area bounded by Kirby Rd, Weston Rd, Teston Rd & Pine Valley Dr. Townhomes and detached homes, pricing on request. Launching November 10, 2026.</p>
-            <p><strong>Contact</strong><br><a href="${S.phoneHref}">${S.phone}</a><br><a href="mailto:${S.email}">${S.email}</a><br>Weston Rd & Teston Rd<br>North Vaughan, Ontario</p>
+            <p class="wordmark" style="margin-bottom:16px">Bridgelands</p>
+            <p>Towns and detached homes at Weston Rd &amp; Teston Rd, North Vaughan. Pricing on request. Launching November 10, 2026.</p>
+            <p><a href="${S.phoneHref}">${S.phone}</a><br><a href="mailto:${S.email}">${S.email}</a></p>
           </div>
           <div>
-            <h4>Quick links</h4>
+            <h4>Links</h4>
             <ul>
-              <li><a href="index.html#features">Why Bridgelands</a></li>
-              <li><a href="index.html#builder">Community</a></li>
+              <li><a href="index.html#homes">Homes</a></li>
               <li><a href="index.html#location">Location</a></li>
-              <li><a href="index.html#downloads">Get Pricing & Floor Plans</a></li>
-              <li><a href="register.html">Book VIP Review</a></li>
-              <li><a href="blog.html">Guides & Comparisons</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="blog.html">Guides</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="terms.html">Terms</a></li>
             </ul>
           </div>
-          <div>
-            <h4>Guides</h4>
-            <ul>
-              <li><a href="article.html?slug=bridgelands-is-block-41">Block 41 Vaughan</a></li>
-              <li><a href="article.html?slug=opa-50-timeline">Block 41 Secondary Plan</a></li>
-              <li><a href="article.html?slug=buying-preconstruction">Bridgelands Price List</a></li>
-              <li><a href="article.html?slug=opus-townhomes">Bridgelands Floor Plans</a></li>
-              <li><a href="article.html?slug=towns-vs-detached">Bridgelands Townhomes</a></li>
-              <li><a href="article.html?slug=opus-detached">Bridgelands Detached Homes</a></li>
-              <li><a href="article.html?slug=getting-around">Weston Rd & Teston Rd Location</a></li>
-              <li><a href="article.html?slug=november-10-launch">November 10 Launch Guide</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="sisters">
-          <h4>Related communities</h4>
-          <div class="sister-grid">${sisters}</div>
         </div>
         <div class="fine">
-          <p>© 2026 Bridgelands Early Access — Marketing by Condo Circle. This independent recreation is not an official builder website and does not represent Arista Homes, DECO Homes or Opus Homes.</p>
-          <p>Renderings are artist's concepts. Pricing, product types, incentives and release dates are confirmed by each builder. Information is subject to change. E. & O.E.</p>
+          <p>© 2026 Bridgelands Early Access — Marketing by Condo Circle. This independent recreation is not an official builder website and does not represent Arista Homes, DECO Homes or Opus Homes. Renderings are artist's concepts. Information is subject to change.</p>
         </div>
       </div>
       <div class="floaters">
@@ -75,7 +54,6 @@
   function mountChrome() {
     const h = document.getElementById("chrome-header");
     const f = document.getElementById("chrome-footer");
-    document.body.classList.add("dossier");
     if (h) {
       h.className = "site-header";
       h.innerHTML = header();
@@ -239,6 +217,43 @@
       <p><a href="blog.html">← All articles</a></p>`;
   }
 
+  function simpleForm(rootId) {
+    const root = document.getElementById(rootId);
+    if (!root) return;
+    root.innerHTML = `
+      <h3>Get on the list</h3>
+      <p>Floor plans and pricing when each builder releases them. No obligation.</p>
+      <form class="form" id="${rootId}-form">
+        <label>First name<input name="first" required autocomplete="given-name"></label>
+        <label>Last name<input name="last" required autocomplete="family-name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+        <label class="full">Home type
+          <select name="choice" required>
+            <option value="">Select</option>
+            <option>Townhome</option>
+            <option>Detached</option>
+            <option>Either</option>
+          </select>
+        </label>
+        <button class="btn btn-coral" type="submit">Register</button>
+      </form>
+      <p class="note">Saved only in this browser. This preview does not send your details to a sales team.</p>`;
+    root.querySelector("form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      data.at = new Date().toISOString();
+      const all = JSON.parse(localStorage.getItem("bridgelands-vip") || "[]");
+      all.push(data);
+      localStorage.setItem("bridgelands-vip", JSON.stringify(all));
+      root.innerHTML = `
+        <div class="success">
+          <h3>You're on the list.</h3>
+          <p>We saved your ${String(data.choice).toLowerCase()} interest on this device. Nothing was sent to a sales team.</p>
+        </div>`;
+    });
+  }
+
   function form(rootId) {
     const root = document.getElementById(rootId);
     if (!root) return;
@@ -312,6 +327,7 @@
     else if (document.getElementById("post-grid")) posts(Number(postMode) || 4);
     articleIndex();
     articlePage();
+    simpleForm("hero-form");
     form("register-card");
     form("register-page");
     const box = document.getElementById("lightbox");
